@@ -4,6 +4,11 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+# Nova função adicionada
+def power(a, b):
+    return a ** b
+
+
 def multiply(a, b):
     return a * b
 
@@ -18,6 +23,7 @@ def main():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
+    print("5. Power")
 
     choice = input("Choose an operation (1/2/3/4): ")
 
@@ -32,6 +38,8 @@ def main():
         print(f"Result: {multiply(num1, num2)}")
     elif choice == '4':
         print(f"Result: {divide(num1, num2)}")
+    elif choice == '5':
+        print(f"Result: {power(num1, num2)}")
     else:
         print("Invalid choice")
 
